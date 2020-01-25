@@ -2,12 +2,6 @@ package templates;
 
 public class FacadeApp {
     public static void main(String[] args) {
-        Power power = new Power();
-        power.on();
-        DVDRoom dvdRoom = new DVDRoom();
-//        dvdRoom.load();
-        HDD hdd = new HDD();
-        hdd.copyFromDVD(dvdRoom);
 
         Computer computer = new Computer();
 
@@ -16,7 +10,7 @@ public class FacadeApp {
         computer.copy();
     }
 }
-//  1. После всего делаем управляющий класс, куда помещаем экземпляры наших запчастей
+//  1. После создания вспомогательных классов делаем управляющий класс, куда помещаем экземпляры наших запчастей
 class Computer {
         Power power = new Power();
         DVDRoom dvdRoom = new DVDRoom();
@@ -25,6 +19,7 @@ class Computer {
         power.on();
         dvdRoom.load();
         hdd.copyFromDVD(dvdRoom);
+        power.off();
     }
 }
 
