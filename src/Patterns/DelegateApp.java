@@ -1,4 +1,4 @@
-package templates;
+package Patterns;
 
 public class DelegateApp {
     public static void main(String[] args) {

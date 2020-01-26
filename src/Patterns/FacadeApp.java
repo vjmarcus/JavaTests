@@ -1,4 +1,4 @@
-package templates;
+package Patterns;
 
 public class FacadeApp {
     public static void main(String[] args) {
