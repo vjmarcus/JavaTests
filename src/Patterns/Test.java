@@ -7,6 +7,8 @@ public class Test {
 
     }
 }
+
+
 class InitialValues{
     boolean bool;
     char c;
