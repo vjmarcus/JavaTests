@@ -1,4 +1,4 @@
-package solid.employee_arhitecture;
+package solid.employee_architecture;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
