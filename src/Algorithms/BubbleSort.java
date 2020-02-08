@@ -7,7 +7,9 @@ public class BubbleSort {
         int last = sortAscending(array)[array.length - 1];
         System.out.println("First = " + first);
         System.out.println("Last = " + last);
-
+        for (int num : array) {
+            System.out.println(num);
+        }
         int descLast = sortDescending(array)[array.length - 1];
         System.out.println("DescLast = " + descLast);
 

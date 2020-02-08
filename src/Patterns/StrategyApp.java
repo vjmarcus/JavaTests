@@ -1,10 +1,13 @@
 package Patterns;
 
+import java.util.Arrays;
+
 public class StrategyApp {
     public static void main(String[] args) {
-        BubbleSort bubbleSort = new BubbleSort();
-        int [] array = new int[]{1, 231, 54, 47, 11};
-        System.out.println(array[array.length - 1]);
+        StrategyClient strategyClient = new StrategyClient();
+        strategyClient.setStrategy(new BubbleSort());
+        int [] array = {1234, 23, 24, -523, 535, 65};
+        strategyClient.executeStrategy(array);
     }
 }
 
@@ -14,7 +17,7 @@ interface Sorting {
 }
 
 //Context
-class StrategyClient {
+ class StrategyClient {
     Sorting strategy;
 
     public void setStrategy(Sorting strategy) {
@@ -29,14 +32,19 @@ class StrategyClient {
 class BubbleSort implements Sorting {
     @Override
     public void sort(int[] array) {
+        System.out.println("Сортировка пузырьком");
+        System.out.println("До " + Arrays.toString(array));
         for (int i = 0; i < array.length - 1; i++) {
-            if (array[i] > array[i + 1]) {
-                int temp = array[i];
-                array[i] = array[i + 1];
-                array[i + 1] = temp;
+            for (int j = 0; j < array.length - 1; j++) {
+                if (array[j] > array[j + 1]){
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
             }
-
         }
+        System.out.println("После сортировки пузырьком");
+        System.out.println("После " + Arrays.toString(array));
     }
 }
 
