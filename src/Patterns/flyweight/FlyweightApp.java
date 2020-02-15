@@ -2,7 +2,7 @@ package Patterns.flyweight;
 
 import java.util.*;
 
-public class Flyweight {
+public class FlyweightApp {
     public static void main(String[] args) {
         ShapeFactory shapeFactory = new ShapeFactory();
         List<Shape> shapes = new ArrayList<>();
