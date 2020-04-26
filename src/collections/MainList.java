@@ -1,15 +1,25 @@
-package List;
+package collections;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Main {
+public class MainList {
     public static void main(String[] args) {
-        List<Integer> arrayList = new ArrayList<>();
-        List<Integer> linkedList = new LinkedList<>();
-        measureTime(arrayList);
-        measureTime(linkedList);
+
+        // Test myLinkedList (simple linked list)
+        MyLinkedList myLinkedList  = new MyLinkedList();
+        myLinkedList.add(0);
+        myLinkedList.add(1);
+        myLinkedList.add(2);
+        System.out.println(myLinkedList);
+        myLinkedList.remove(1);
+        System.out.println(myLinkedList);
+
+
+
+
+
     }
     public static void measureTime(List <Integer> list) {
         for (int i = 0; i < 1000000; i++) {
