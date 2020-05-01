@@ -43,9 +43,9 @@ public class Main {
         System.out.println(listOfNumbers);
 
         List<Person> listOfPerson = new ArrayList<>();
+        listOfPerson.add(new Person(3, "Dimon"));
         listOfPerson.add(new Person(1, "Oleg"));
         listOfPerson.add(new Person(2, "Nikita"));
-        listOfPerson.add(new Person(3, "Dimon"));
         Collections.sort(listOfPerson, new Comparator<Person>() {
             @Override
             public int compare(Person o1, Person o2) {
