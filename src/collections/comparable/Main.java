@@ -1,4 +1,4 @@
-package comparable;
+package collections.comparable;
 import java.util.*;
 
 /* Нужно сортировать обьекты в коллекции. Для этого у нашего обьекта имплементируем интерфейс Comparable и описываем

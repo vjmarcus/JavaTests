@@ -5,10 +5,12 @@ import java.util.*;
 public class MainList {
     public static void main(String[] args) {
 
+        List<Integer> list = new ArrayList<>();
         Set<Integer> setOfInteger = new HashSet<>();
         Set<Integer> setOfInteger2 = new HashSet<>();
         addValue(setOfInteger, 100);
         addValue(setOfInteger2, 150);
+
 
         // union
         Set<Integer> unionSet = new HashSet<>(setOfInteger);
